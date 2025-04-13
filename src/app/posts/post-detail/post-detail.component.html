@@ -1,10 +1,13 @@
 <div class="container mt-4" *ngIf="post">
-    <div class="card">
+    <h2 class="text-center">Detalle de publicación</h2>
+    <div class="card mt-4">
       <div class="card-body">
-        <h5 class="card-title">{{ post.title }}</h5>
+        <h5 class="card-title text-center">{{ post.title }}</h5>
         <p class="card-text">{{ post.body }}</p>
-        <a [routerLink]="['/posts', post.id, 'edit']" class="btn btn-primary me-2">Editar</a>
-        <a routerLink="/posts" class="btn btn-secondary">Volver al Listado</a>
+        <div class="text-center">
+            <a [routerLink]="['/posts', post.id, 'edit']" class="btn btn-primary me-2">Editar</a>
+            <a routerLink="/posts" class="btn btn-secondary">Volver al Listado</a>
+        </div>
       </div>
     </div>
   </div>

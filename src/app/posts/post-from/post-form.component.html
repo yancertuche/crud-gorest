@@ -1,24 +1,25 @@
 <div class="container mt-4">
-    <h2>{{ isEditMode ? 'Editar Publicación' : 'Crear Publicación' }}</h2>
+    <h2 class="text-center">{{ isEditMode ? 'Editar Publicación' : 'Crear Publicación' }}</h2>
     <form [formGroup]="postForm" (ngSubmit)="onSubmit()">
-      <div class="mb-3">
-        <label for="title" class="form-label">Título</label>
-        <input type="text" id="title" formControlName="title" class="form-control" />
-        <div *ngIf="postForm.get('title')?.invalid && postForm.get('title')?.touched" class="text-danger">
-          El título es obligatorio.
+        <div class="mb-3 mt-4">
+            <label for="title" class="form-label">Título</label>
+            <input type="text" id="title" formControlName="title" class="form-control" />
+            <div *ngIf="postForm.get('title')?.invalid && postForm.get('title')?.touched" class="text-danger">
+                El título es obligatorio.
+            </div>
         </div>
-      </div>
-      <div class="mb-3">
-        <label for="body" class="form-label">Contenido</label>
-        <textarea id="body" formControlName="body" class="form-control"></textarea>
-        <div *ngIf="postForm.get('body')?.invalid && postForm.get('body')?.touched" class="text-danger">
-          El contenido es obligatorio.
+        <div class="mb-3">
+            <label for="body" class="form-label">Contenido</label>
+            <textarea id="body" formControlName="body" class="form-control"></textarea>
+            <div *ngIf="postForm.get('body')?.invalid && postForm.get('body')?.touched" class="text-danger">
+                El contenido es obligatorio.
+            </div>
         </div>
-      </div>
-      <button type="submit" class="btn btn-primary me-2">
-        {{ isEditMode ? 'Actualizar' : 'Guardar' }}
-      </button>
-      <a routerLink="/posts" class="btn btn-secondary">Volver al Listado</a>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary me-2">
+                {{ isEditMode ? 'Actualizar' : 'Guardar' }}
+            </button>
+            <a routerLink="/posts" class="btn btn-secondary">Volver al Listado</a>
+        </div>
     </form>
-  </div>
-  
+</div>

@@ -1,1 +1,134 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+
+    /* Colors: */
+    ---000000: #000000;
+    ---f4f4f4: #F4F4F4;
+    ---4c4c4c: #4C4C4C;
+    ---9d7700: #9D7700;
+    ---e5ecf8: #E5ECF8;
+    ---7e7e7e: #7E7E7E;
+    ---c8c8c8: #C8C8C8;
+    ---4672c8: #4672C8;
+    ---0943b5: #0943B5;
+    ---a80521: #A80521;
+    ---fee697: #FEE697;
+    ---fecc2f: #FECC2F;
+    ---b5c7e9: #B5C7E9;
+    
+    /* Font/text values */
+    --unnamed-font-family-nunito-sans: Nunito Sans;
+    --unnamed-font-family-verdana: Verdana;
+    --unnamed-font-style-normal: normal;
+    --unnamed-font-weight-600: 600px;
+    --unnamed-font-weight-bold: bold;
+    --unnamed-font-weight-normal: normal;
+    --unnamed-font-size-14: 14px;
+    --unnamed-font-size-15: 15px;
+    --unnamed-font-size-16: 16px;
+    --unnamed-font-size-18: 18px;
+    --unnamed-font-size-20: 20px;
+    --unnamed-font-size-22: 22px;
+    --unnamed-font-size-26: 26px;
+    --unnamed-font-size-34: 34px;
+    --unnamed-font-size-42: 42px;
+    --unnamed-character-spacing-0: 0px;
+    --unnamed-line-spacing-22: 22px;
+    --unnamed-line-spacing-24: 24px;
+    --unnamed-line-spacing-26: 26px;
+    --unnamed-line-spacing-32: 32px;
+    --unnamed-line-spacing-34: 34px;
+    --unnamed-line-spacing-42: 42px;
+    --unnamed-line-spacing-50: 50px;
+    }
+    
+    /* Character Styles */
+    .h5-l-nunito-sans-—-18pt {
+    font-family: var(--unnamed-font-family-nunito-sans);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-18);
+    line-height: var(--unnamed-line-spacing-24);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(---4c4c4c);
+    }
+    .body-text-2-l-verdana-—-14pt {
+    font-family: var(--unnamed-font-family-verdana);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-14);
+    line-height: var(--unnamed-line-spacing-22);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(---4c4c4c);
+    }
+    .h1-l-nunito-sans-—-42pt {
+    font-family: var(--unnamed-font-family-nunito-sans);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-42);
+    line-height: var(--unnamed-line-spacing-50);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(---4c4c4c);
+    }
+    .h4-l-nunito-sans-—-22pt {
+    font-family: var(--unnamed-font-family-nunito-sans);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-22);
+    line-height: var(--unnamed-line-spacing-32);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(---4c4c4c);
+    }
+    .h6-l-nunito-sans-—-16pt {
+    font-family: var(--unnamed-font-family-nunito-sans);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-16);
+    line-height: var(--unnamed-line-spacing-22);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(---4c4c4c);
+    }
+    .h5-l-nunito-sans-—-20pt {
+    font-family: var(--unnamed-font-family-nunito-sans);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-20);
+    line-height: var(--unnamed-line-spacing-26);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(---4c4c4c);
+    }
+    .description-l-nunito-sans-—-20pt {
+    font-family: var(--unnamed-font-family-nunito-sans);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-600);
+    font-size: var(--unnamed-font-size-20);
+    line-height: var(--unnamed-line-spacing-24);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(---4c4c4c);
+    }
+    .body-text-1-l-verdana-—-15pt {
+    font-family: var(--unnamed-font-family-verdana);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-15);
+    line-height: var(--unnamed-line-spacing-22);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(---4c4c4c);
+    }
+    .h2-l-nunito-sans-—-34pt {
+    font-family: var(--unnamed-font-family-nunito-sans);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-34);
+    line-height: var(--unnamed-line-spacing-42);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(---4c4c4c);
+    }
+    .h3-l-nunito-sans-—-26pt {
+    font-family: var(--unnamed-font-family-nunito-sans);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-26);
+    line-height: var(--unnamed-line-spacing-34);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(---4c4c4c);
+    }
