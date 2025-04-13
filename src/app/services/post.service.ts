@@ -12,6 +12,7 @@ export class PostService {
 
   // El token se debe configurar en los archivos de entorno (environment.ts)
   private token = environment.token;
+  private userId = environment.userId;
 
   constructor(private http: HttpClient) {}
 
@@ -29,7 +30,8 @@ export class PostService {
   }
 
   createPost(post: Post): Observable<Post> {
-    return this.http.post<Post>(this.apiUrl, post, { headers: this.headers });
+    const payload = { ...post, user_id: this.userId };
+    return this.http.post<Post>(this.apiUrl, payload, { headers: this.headers });
   }
 
   updatePost(id: number, post: Post): Observable<Post> {

@@ -7,11 +7,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { PostListComponent } from './posts/post-list/post-list.component';
+import { PostDetailComponent } from './posts/post-detail/post-detail.component';
+import { PostFormComponent } from './posts/post-from/post-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PostListComponent
+    PostListComponent,
+    PostDetailComponent,
+    PostFormComponent
   ],
   imports: [
     BrowserModule,
