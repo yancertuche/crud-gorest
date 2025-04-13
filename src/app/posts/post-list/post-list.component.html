@@ -1,0 +1,14 @@
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h2>Listado de Publicaciones</h2>
+      <a routerLinkActive="active" routerLink="/posts/new" class="btn btn-success">Nueva Publicación</a>
+    </div>
+    <div class="list-group">
+      <a *ngFor="let post of posts"
+         routerLinkActive="active"
+         [routerLink]="['/posts', post.id]"
+         class="list-group-item list-group-item-action">
+        {{ post.title }}
+      </a>
+    </div>
+  </div>
