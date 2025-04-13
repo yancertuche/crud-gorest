@@ -1,14 +1,18 @@
 <div class="container mt-4">
     <div class="d-flex justify-content-between align-items-center mb-3">
       <h2>Listado de Publicaciones</h2>
-      <a routerLinkActive="active" routerLink="/posts/new" class="btn btn-success">Nueva Publicación</a>
+      <a routerLink="/posts/new" class="btn btn-success">Nueva Publicación</a>
     </div>
     <div class="list-group">
-      <a *ngFor="let post of posts"
-         routerLinkActive="active"
-         [routerLink]="['/posts', post.id]"
-         class="list-group-item list-group-item-action">
-        {{ post.title }}
-      </a>
+      <div *ngFor="let post of posts" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+        <a [routerLink]="['/posts', post.id]" class="text-decoration-none flex-grow-1">
+          {{ post.title }}
+        </a>
+        <div>
+          <a [routerLink]="['/posts', post.id, 'edit']" class="btn btn-primary btn-sm me-2">Editar</a>
+          <button (click)="deletePost(post.id!)" class="btn btn-danger btn-sm">Eliminar</button>
+        </div>
+      </div>
     </div>
   </div>
+  
