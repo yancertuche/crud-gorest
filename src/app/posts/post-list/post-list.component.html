@@ -1,7 +1,6 @@
 <div class="container mt-4">
     <div class="d-flex justify-content-between align-items-center mb-3">
       <h2>Listado de Publicaciones</h2>
-      <a routerLink="/posts/new" class="btn btn-success">Nueva Publicación</a>
     </div>
     <div class="list-group">
       <div *ngFor="let post of posts" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
@@ -9,8 +8,12 @@
           {{ post.title }}
         </a>
         <div>
-          <a [routerLink]="['/posts', post.id, 'edit']" class="btn btn-primary btn-sm me-2">Editar</a>
-          <button (click)="deletePost(post.id!)" class="btn btn-danger btn-sm">Eliminar</button>
+          <a [routerLink]="['/posts', post.id, 'edit']" class="btn btn-primary btn-sm me-2" aria-label="Editar">
+            Editar
+          </a>
+          <button (click)="deletePost(post.id!)" class="btn btn-danger btn-sm">
+            Eliminar
+          </button>
         </div>
       </div>
     </div>
