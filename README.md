@@ -1,59 +1,45 @@
-# CrudGorest
+# CRUD de Publicaciones con Angular 19 y GoRest
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.7.
+Esta aplicación Angular implementa un CRUD de publicaciones basado en la API pública de GoRest ([https://gorest.co.in/public/v2/posts](https://gorest.co.in/public/v2/posts)).
 
-## Development server
+## Funcionalidades
+- **Listar Publicaciones:** Se muestran todas las publicaciones disponibles.
+- **Ver Detalle:** Al hacer clic en una publicación se muestra el detalle.
+- **Crear Publicación:** Se pueden crear nuevas publicaciones mediante un formulario reactivo.
+- **Editar Publicación:** Se pueden editar publicaciones existentes.
+- **Eliminar Publicación:** Permite eliminar publicaciones.
 
-To start a local development server, run:
+## Instalación y Configuración
+1. Clona el repositorio y ubicarse en la raiz del proyecto:
+   ```bash
+   git clone https://github.com/yancertuche/crud-gorest.git
+   cd crud-gorest
+2. Instala las dependencias:
+    ```bash
+    npm install
+3. Configura tu token y id de Usuario de GoRest creando variables de entorno en la siguiente ruta del proyecto:  `src/environments/environment.ts`
 
-```bash
-ng serve
-```
+    ```typescript
+        export const environment = {
+            token: 'TU_TOKEN_DE_GOREST',
+            userId: xxxx
+        };
+4. Inicia la aplicación:
+    ```bash
+        ng serve
+5. Abre http://localhost:4200 en tu navegador y empieza a interactuar! 
+|
+## Estructura del Proyecto
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+el proyecto se compone de las siguientes carpetas y archivos relevantes:
+- **src**|
+    - **app**
+        - 3.1 **Models**: Directorio que define la estructura (interfaz) para las publicaciones.
+        - 3.2 **Components**: Directorio donde se implementan los omponentes para la aplicación
+        - 3.3 **services**: Directorio donde ser implementan los servicios encargadod de gestionar las operaciones      CRUD    con la API de GoRest.
+        - 3.4 **app-routing.module.ts**: Archivos que configura las rutas de la aplicación, asignando URLs a componentes.
+        - 3.5 **app.component.ts**: Archivo del componente raíz que sirve de contenedor principal e incluye un `<router-outlet>` para el enrutamiento.
+        - 3.6 **app.module.ts**: Archivo del módulo raíz que declara todos los componentes e importa los módulos necesarios.
+        - 3.7 **environments**: Directorio que se debe crear para almacenar los archivos de onfiguración para el entorno de desarrollo (incluye variables como el token e id de Usuario de GoRest).
+    - **index.html**: Archivo HTML principal que carga la aplicación Angular.
+    - **styles.css**: Estilos globales; aquí se definen variables CSS, tipografías, colores y reglas generales relacionadas a los lineamientos gov.co.
