@@ -9,7 +9,7 @@ Esta aplicación Angular implementa un CRUD de publicaciones basado en la API p�
 - **Editar Publicación:** Se pueden editar publicaciones existentes.
 - **Eliminar Publicación:** Permite eliminar publicaciones.
 
-## Instalación y Configuración
+## Instalación y Configuración local
 1. Clona el repositorio y ubicarse en la raiz del proyecto:
    ```bash
    git clone https://github.com/yancertuche/crud-gorest.git
@@ -43,3 +43,15 @@ el proyecto se compone de las siguientes carpetas y archivos relevantes:
         - 3.7 **environments**: Directorio que se debe crear para almacenar los archivos de onfiguración para el entorno de desarrollo (incluye variables como el token e id de Usuario de GoRest).
     - **index.html**: Archivo HTML principal que carga la aplicación Angular.
     - **styles.css**: Estilos globales; aquí se definen variables CSS, tipografías, colores y reglas generales relacionadas a los lineamientos gov.co.
+
+## Capturas del resultado
+
+![Pantalla 1](capturas/PantallaPrincipalListar.jpg).
+
+![Pantalla 2](capturas/PantallaCrearNuevaPublicacion.jpg).
+
+![Pantalla 3](capturas/PantallaCrearNuevaPublicacionValidaciones.jpg).
+
+![Pantalla 4](capturas/PantallaEditarPublicación.jpg).
+
+![Pantalla 5](capturas/PantallaEliminarPublicación.jpg).
